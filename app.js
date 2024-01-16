@@ -97,35 +97,16 @@
 
 function highestnumber(a,b,c){
   if( a === `` && b ===`` && c === ``){
-    console.log('დარწმუნდით რომ ყველა ჩარჩო შევსებულია!!')
-  }
-  else if(a > b && a > c){
-    console.log(`highest number is`, a)
-  }
-  else if( b > a && b > c){
-    console.log(`highest number is`, b)
-  }
-  else if(c > a && c > b){
-    console.log(`highest number is`, c)
-  }
-  else if (a === b && a > c){
-    console.log(`highest number is`, a )
-  }
-  else if ( b === c && b > a){
-    console.log(`highest number is`, b)
-  }
- else if(c === a && c > b){
-  console.log`highest number is`, (c)
- }
- else if (a === b && a < c){
-  console.log`highest number is`, (c)
- }
- else if( a === b && b === c && a === c){
-  console.log(`all numbers are equal try different combinations!`)
- }
- else{
-          console.log(`error`)
-      }
+    console.log('დარწმუნდით რომ ყველა ჩარჩო შევსებულია!!')}
+ else if( a >= b && a >= c ){
+  console.log(a)
+}
+else if(b >= a && b >= c){
+  console.log(b)
+}
+else{
+  console.log(c)
+}
 
   return highestnumber
 }
